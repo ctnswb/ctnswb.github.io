@@ -3,15 +3,36 @@ body {
   margin: 0;
 }
 
-.top-container {
-  width: 100%;
-  height: 100px;
-  background: whitesmoke;
-
+a {
+  text-decoration: none;
+  color: #F4F6F6;
 }
 
-.intro {
+
+.header {
+  max-width: 100%;
   padding: 2%;
+  height: 100vh;
+  background: #283747;
+  color: #F4F6F6;
+  text-align: center;
+}
+
+
+.footer {
+  max-width: 100%;
+  height: 200px;
+  background: whitesmoke;
+  text-align: center;
+  padding: 2%;
+  height: 50vh;
+}
+
+.icon{
+  color: #76D7C4;
+  font-size: 3em;
+}
+.intro {
   margin: 0;
 }
 .container {
@@ -20,7 +41,21 @@ body {
   grid-template-rows: auto;
   grid-template-areas:
   "header header header";
-  margin: 5%;
+  margin: 7%;
+}
+
+.hire-button {
+  position: absolute;
+  border: solid;
+  border-color: #76D7C4;
+  border-radius: 50px;
+  padding: 1rem;
+  top: 50%;
+}
+
+.work-button {
+  position: absolute;
+  bottom: 5vh;
 }
 
 .heading {
@@ -34,11 +69,11 @@ body {
 
 .project {
   justify-self: center;
-  margin: 2%;
+  margin: 5%;
   text-align: center;
 }
 
 .project-image {
-  max-width: 100%;
+  max-width: 90%;
   border-radius: 5%;
 }
