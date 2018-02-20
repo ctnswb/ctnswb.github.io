@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Candice Lai | Full Stack Engineer</title>
 </head>
 <body>
+  <!--Start Header Section-->
   <div class="header">
-    <div class="intro">
-      <h1>Hi, I'm Candice! I like to build web apps.</h1>
+    <div class="welcome-message">
+      Hi, I'm Candice! I like to build web apps.
     </div>
-    <div>
-      <a href="#contact" class="hire-button">YES, I'M AVAILABLE FOR HIRE</a>
-    </div>
-    <div class="work-button">
-    <a href="#work" >Check out my work >></a>
-    </div>
+    <a href="#contact" class="hire-button" >YES, I'M AVAILABLE FOR HIRE</a>
+    <a href="#work" class="work-button">Check out my work >></a>
+
   </div>
+
+  <!--Start Main Section-->
   <div class="container">
     <div class="heading">
-  <h2 id="work">My Work</h2>
+      <h2 id="work">My Work</h2>
     </div>
     <div class="project">
       <img class="project-image" src="./BasketBearSS.png">
@@ -47,15 +48,35 @@
       <p>Hit the Hold in an interactive climbing game, meant to be projected onto a climbing wall, where climbers race the timer to hit all the holds in order.</p>
       <p>Angular, Node, Express.js</p>
     </div>
-</div>
+  </div>
+
+  <!--Start Footer Section-->
   <div class="footer">
-    <div id="contact">
-    <p></p>
-    <a class="icon" href="https://github.com/ctnswb" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a class="icon" href="https://www.linkedin.com/in/candice-t-lai/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-
-
+    <div class="contact-form" id="contact">
+      <div>
+        <input type="text" id="contact-name" placeholder="name" />
+        <label for="input">name</label>
+      </div>
+      <div>
+        <input type="email" id="contact-email" placeholder="email" />
+        <label for="input">email</label>
+      </div>
+      <div>
+        <textarea type="paragraph" id="contact-message" placeholder="message" ></textarea>
+        <label for="input">message</label>
+      </div>
+      <div id="contact-button"> Submit</div>
+    </div>
+    <div class="icon-list">
+      <a class="icon" href="https://github.com/ctnswb" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/candice-t-lai/" target="_blank">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
+
+
 </body>
 </html>
