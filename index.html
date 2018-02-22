@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <title>Candice Lai | Full Stack Engineer</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+  <script type="text/javascript" src="./src/contact.js"></script>
 </head>
 <body>
   <!--Start Header Section-->
@@ -28,20 +31,20 @@
       <h2>My Work</h2>
     </div>
     <div class="project">
-      <img class="project-image" src="./BasketBearSS.png">
+      <img class="project-image" src="./images/BasketBearSS.png">
       <h3>Basket Bear</h3>
       <p>Basket Bear is a shopping app that helps customers buy products from Amazon or eBay at their desired prices. It also provides an API for businesses to use to get product pricing data.</p>
       <p>React, Node.js, Express.js, Cloud Firestore</p>
     </div>
     <div class="project">
-      <img class="project-image" src="./JukeboxSS.png">
+      <img class="project-image" src="./images/JukeboxSS.png">
       <h3>Jukebox</h3>
       <p>Jukebox is a music player app that lets users add and vote on songs to be played next in the queue. Hosts can also add songs from their existing Spotify playlists.
       </p>
       <p>React, Node.js, Express.js, MongoDB</p>
     </div>
     <div class="project">
-      <img class="project-image" src="./FitStopSS.png">
+      <img class="project-image" src="./images/FitStopSS.png">
       <h3>Fit Stop</h3>
       <p>Fitstop is an exercise app that guides users through a timed workout and tracks their workout history.</p>
       <p>Node.js, Express.js, React, MongoDb</p>
@@ -56,7 +59,7 @@
   <!--Start Footer Section-->
   <div class="footer-container">
     <div class="footer-profile">
-      <img src="./me-photo.png">
+      <img src="./images/me-photo.png">
       <div class="icon-list">
         <a class="icon" href="https://github.com/ctnswb" target="_blank">
           <i class="fa fa-github" aria-hidden="true"></i>
@@ -76,7 +79,7 @@
         <textarea class="input message" type="paragraph" id="contact-message" placeholder="How can I help?" ></textarea>
 
         <div id="submit-form">
-          <p class="submit">Submit</p>
+          <p id="contact-button" class="submit">Submit</p>
         </div>
       </div>
     </div>
