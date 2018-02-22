@@ -9,37 +9,121 @@ a {
   color: #F4F6F6;
 }
 
-
-.header {
-  display: block;
-  max-width: 100%;
+.header-container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a topbox c"
+    "a centerbox c"
+    "a bottombox c";
   height: 100vh;
   background: #283747;
   color: #F4F6F6;
-  text-align: center;
+  align-items: center;
 }
 
-.welcome-message {
+.header-top {
+  grid-area: topbox;
   padding: 2%;
   font-size: 2em;
+  text-align: center;
 }
-.hire-button {
-  border: solid;
-  border-color: #76D7C4;
-  border-radius: 50px;
-  max-width: 100%;
-  padding: 2%;
-  font-size: 2vw;
+.header-middle {
+  grid-area: centerbox;
+  text-align: center;
 }
 
-.footer {
-  max-width: 100%;
-  height: 200px;
-  background: whitesmoke;
+.header-bottom {
+  grid-area: bottombox;
   text-align: center;
-  padding: 2%;
-  height: 50vh;
 }
+
+.available-button {
+  border: solid 1.5px;
+  border-color: #76D7C4;
+  border-radius: 50px;
+  padding: 2%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    "lm tm header rm"
+    "lm profile contact rm"
+    "lm bm bm rm";
+  background: whitesmoke;
+  height: 100vh;
+}
+
+.footer-profile {
+  grid-area: profile;
+  text-align: center;
+}
+
+.footer-contact {
+  grid-area: contact;
+}
+
+.footer-header {
+  grid-area: header;
+  align-self: end;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.input {
+  width: 100%;
+  font-size: 1em;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: solid 1px #76D7C4;
+  border-radius: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submit {
+  width: 100%;
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 5px;
+  border: solid 1px #76D7C4;
+  border-radius: 10px;
+  text-align: center;
+  background: whitesmoke;
+}
+
+.submit:hover{
+  background: #76D7C4;
+}
+
+img {
+  width: 80%;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+
+
+/*.input-name {
+  width: 100%;
+  font-size: 1em;
+}
+
+.input-email {
+  width: 100%;
+  font-size: 1em;
+}
+
+.input-message {
+  width: 100%;
+  font-size: 1em;
+}*/
 
 .icon{
   color: #76D7C4;
@@ -52,12 +136,6 @@ a {
   grid-template-areas:
   "header header header";
   margin: 7%;
-}
-
-
-.work-button {
-  position: absolute;
-  bottom: 5vh;
 }
 
 .heading {

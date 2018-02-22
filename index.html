@@ -10,19 +10,22 @@
 </head>
 <body>
   <!--Start Header Section-->
-  <div class="header">
-    <div class="welcome-message">
+  <div class="header-container">
+    <div class="header-top">
       Hi, I'm Candice! I like to build web apps.
     </div>
-    <a href="#contact" class="hire-button" >YES, I'M AVAILABLE FOR HIRE</a>
-    <a href="#work" class="work-button">Check out my work >></a>
-
+    <div class="header-middle">
+      <a href="#contact" class="available-button" >YES, I'M AVAILABLE FOR HIRE</a>
+    </div>
+    <div class="header-bottom">
+      <a href="#main">Check out my work >></a>
+    </div>
   </div>
 
   <!--Start Main Section-->
-  <div class="container">
+  <div id="main" class="container">
     <div class="heading">
-      <h2 id="work">My Work</h2>
+      <h2>My Work</h2>
     </div>
     <div class="project">
       <img class="project-image" src="./BasketBearSS.png">
@@ -51,30 +54,34 @@
   </div>
 
   <!--Start Footer Section-->
-  <div class="footer">
-    <div class="contact-form" id="contact">
-      <div>
-        <input type="text" id="contact-name" placeholder="name" />
-        <label for="input">name</label>
+  <div class="footer-container">
+    <div class="footer-profile">
+      <img src="./me-photo.png">
+      <div class="icon-list">
+        <a class="icon" href="https://github.com/ctnswb" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="icon" href="https://www.linkedin.com/in/candice-t-lai/" target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+
       </div>
-      <div>
-        <input type="email" id="contact-email" placeholder="email" />
-        <label for="input">email</label>
-      </div>
-      <div>
-        <textarea type="paragraph" id="contact-message" placeholder="message" ></textarea>
-        <label for="input">message</label>
-      </div>
-      <div id="contact-button"> Submit</div>
     </div>
-    <div class="icon-list">
-      <a class="icon" href="https://github.com/ctnswb" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a class="icon" href="https://www.linkedin.com/in/candice-t-lai/" target="_blank">
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      </a>
+
+    <div class="footer-header">Let's Chat!</div>
+    <div class="footer-contact" id="contact">
+      <div class="contact-form">
+        <input class="input name" type="text" id="contact-name" placeholder="Name *" />
+        <input class="input email" type="email" id="contact-email" placeholder="Email address *" />
+        <textarea class="input message" type="paragraph" id="contact-message" placeholder="How can I help?" ></textarea>
+
+        <div id="submit-form">
+          <p class="submit">Submit</p>
+        </div>
+      </div>
     </div>
+
+
   </div>
 
 
