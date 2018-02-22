@@ -46,6 +46,15 @@ a {
   padding: 2%;
 }
 
+.available-button:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.work-button:hover {
+  font-size: 1.2em;
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr;

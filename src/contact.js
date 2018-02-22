@@ -19,6 +19,7 @@ $(document).on('keyup', '#contact-name, #contact-email, #contact-message', () =>
 })
 
 $(document).on('click','#contact-button', ()=>{
+  if (contactData.name && contactData.email && contactData.message) {
     let data = new URLSearchParams();
     data.append('data', JSON.stringify(contactData));
     console.log('submitting form');
@@ -29,4 +30,8 @@ $(document).on('click','#contact-button', ()=>{
       $('#contact-email').val('');
       $('#contact-message').val('');
     })
+  }
+  else {
+
+  }
 })
