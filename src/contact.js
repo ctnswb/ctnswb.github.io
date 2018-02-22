@@ -32,6 +32,23 @@ $(document).on('click','#contact-button', ()=>{
     })
   }
   else {
-
+    if (!contactData.name){
+      $('#contact-name').css("border-color","tomato");
+    }
+    if (!contactData.email){
+      $('#contact-email').css("border-color","tomato");
+    }
+    if (!contactData.message){
+      $('#contact-message').css("border-color","tomato");
+    }
+    if (contactData.name) {
+      $('#contact-name').css("border-color","#76D7C4");
+    }
+    if (contactData.email) {
+      $('#contact-email').css("border-color","#76D7C4");
+    }
+    if (contactData.message) {
+      $('#contact-message').css("border-color","#76D7C4");
+    }
   }
 })
