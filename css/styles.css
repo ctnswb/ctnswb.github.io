@@ -1,5 +1,5 @@
 html, body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,11 +9,38 @@ a {
   color: #F4F6F6;
 }
 
+.navbar {
+  background: whitesmoke;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  min-width: 320px;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #283747;
+  padding: 10px;
+/*  display: inline-block;
+  vertical-align: middle;
+*/}
+
+.navbar a:hover{
+  border: solid 1px #76D7C4;
+}
+
+.navbar-cushion {
+  height: 10vh;
+}
 .header-container {
-  display: grid;
+/*  position: absolute;
+  bottom: 0;
+*/  display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 10vh 1fr 1fr 1fr;
   grid-template-areas:
+    "nav nav nav"
     "a topbox c"
     "a centerbox c"
     "a bottombox c";
@@ -28,6 +55,7 @@ a {
   padding: 2%;
   font-size: 2em;
   text-align: center;
+  align-self: end;
 }
 .header-middle {
   grid-area: centerbox;
@@ -139,6 +167,7 @@ img {
   grid-area: header;
   justify-self: center;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .project {

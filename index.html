@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <link rel="icon" href="./icon.png">
@@ -13,13 +14,21 @@
   <script type="text/javascript" src="./src/contact.js"></script>
 </head>
 <body>
+  <!-- Navigation -->
+  <div class="navbar">
+<!--     <a href="#about">ABOUT</a> -->
+    <a href="#main">PORTFOLIO</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+
   <!--Start Header Section-->
   <div class="header-container">
     <div class="header-top">
       Hi, I'm Candice! I like to build web apps.
     </div>
     <div class="header-middle">
-      <a href="#contact" class="available-button" >YES, I'M AVAILABLE FOR HIRE</a>
+      <a href="#contact" class="available-button" >Need a web developer?</a>
     </div>
     <div class="header-bottom">
       <a href="#main" class="work-button">Check out my work >></a>
@@ -27,9 +36,10 @@
   </div>
 
   <!--Start Main Section-->
-  <div id="main" class="main-container">
+  <div class="navbar-cushion" id="main"></div>
+  <div class="main-container">
     <div class="heading">
-      <h2>My Work</h2>
+      My Work
     </div>
     <div class="project">
       <a href="http://www.basketbear.com/" target="_blank">
@@ -62,10 +72,21 @@
       <p>Hit the Hold in an interactive climbing game, meant to be projected onto a climbing wall, where climbers race the timer to hit all the holds in order.</p>
       <p>Angular, Node, Express.js</p>
     </div>
+
+    <div class="project">
+      <a href="https://www.senderoneclimbing.com/" target="_blank">
+        <img class="project-image" src="./images/SenderOneSS.png">
+      </a>
+      <h3>Sender One Climbing</h3>
+      <p>A fully functional, responsive site showcasing two climbing facilities with custom features.</p>
+      <p>PHP, Wordpress</p>
+    </div>
+
   </div>
 
   <!--Start Footer Section-->
-  <div class="footer-container" id="contact">
+  <div class="navbar-cushion" id="contact"></div>
+  <div class="footer-container">
     <!--Contact Form-->
     <div class="footer-header">Let's Chat!</div>
     <div class="footer-contact">
