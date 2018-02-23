@@ -22,9 +22,7 @@ $(document).on('click','#contact-button', ()=>{
   if (contactData.name && contactData.email && contactData.message) {
     let data = new URLSearchParams();
     data.append('data', JSON.stringify(contactData));
-    console.log('submitting form');
     axios.post("https://script.google.com/macros/s/AKfycbxlz2WPcH89zIOXij4cNKLQjiBhkSUgchr_3LzmQ0tOYdO9nbhj/exec",data).then((response) => {
-      console.log('Message Submitted');
       showMessage();
       $('#contact-name').val('');
       $('#contact-email').val('');
