@@ -1,5 +1,5 @@
 const showMessage = () => {
-  var myDiv = document.getElementById('contact');
+  var myDiv = document.getElementById('form');
   myDiv.innerHTML = ("Thank you for submitting the form! I will be in touch with you shortly.");
 }
 
