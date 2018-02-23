@@ -115,6 +115,20 @@ a {
   font-size: 1.5em;
 }
 
+#contact {
+  background: whitesmoke;
+}
+
+.skills-container {
+  height: 50vh;
+  background: #FDEBD0;
+}
+
+/*.icon-list {
+  color: #283747;
+  font-size: 3em;
+}*/
+
 .input {
   width: 85%;
   font-size: 1em;
