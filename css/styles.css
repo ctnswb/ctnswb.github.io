@@ -172,7 +172,7 @@ a {
   "header header ";
   margin: 7%;
   margin-top: 2%;
-  /*background: whitesmoke;*/
+  max-width: 1200px;
 }
 
 .heading {
@@ -248,5 +248,12 @@ a {
   .main-container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header";
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main-container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

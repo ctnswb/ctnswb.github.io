@@ -50,3 +50,15 @@ $(document).on('click','#contact-button', ()=>{
     }
   }
 })
+
+$(document).on('click', '.link-to-footer', ()=> {
+  $('html, body').animate({
+    scrollTop: $("#contact").offset().top
+  }, 2000);
+})
+
+$(document).on('click', '.link-to-main', ()=> {
+  $('html, body').animate({
+    scrollTop: $("#main").offset().top
+  }, 1500);
+})
