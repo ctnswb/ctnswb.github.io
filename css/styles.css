@@ -78,7 +78,7 @@ a {
 
 .available-button:hover {
   color: black;
-  background: whitesmoke;
+  background: #FDEBD0;
 }
 
 .work-button:hover {
@@ -208,8 +208,16 @@ a {
 }
 
 .project-link:hover {
+  background: #76D7C4;
+  color: whitesmoke;
+}
+
+.tag-list {
+  padding: 2%;
+}
+.project-tag {
   background: #FDEBD0;
-  border-width: 2px;
+  padding: 2px;
 }
 
 @media screen and (max-width: 650px) {
