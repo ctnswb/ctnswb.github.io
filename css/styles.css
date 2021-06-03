@@ -44,7 +44,7 @@ a {
     "a topbox c"
     "a centerbox c"
     "a bottombox c";
-  height: 100vh;
+  height: 50vh;
   background: #283747;
   color: #F4F6F6;
   align-items: center;
@@ -53,10 +53,11 @@ a {
 .header-top {
   grid-area: topbox;
   padding: 2%;
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
   align-self: end;
-  padding-top: 15vh;
+  padding-top: 10vh;
+  display: flex;
 }
 .header-middle {
   grid-area: centerbox;
@@ -154,9 +155,16 @@ a {
 }
 
 .profile {
-  width: 80%;
   max-width: 150px;
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+}
+.about-blurb {
+  padding: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .icon{
@@ -175,6 +183,16 @@ a {
   max-width: 1200px;
 }
 
+.dark {
+  padding: 2% 0;
+}
+
+
+
+.wrapper {
+  background: whitesmoke
+}
+
 .heading {
   grid-area: header;
   justify-self: center;
@@ -190,6 +208,10 @@ a {
   padding: 0;
 }
 
+.arcules-video {
+  max-width: 100%
+}
+
 .project-image {
   max-width: 100%;
 }
@@ -199,6 +221,10 @@ a {
   padding-left: 5%;
   padding-bottom: 5%;
   background: whitesmoke;
+}
+
+.light {
+  background: white
 }
 
 .project-link {

@@ -15,26 +15,60 @@
 <body>
   <!-- Navigation -->
   <div class="navbar">
-<!--     <a href="#about">ABOUT</a> -->
-    <a href="#main" class="link-to-main">PORTFOLIO</a>
- <!--    <a href="#skills">SKILLS</a> -->
+    <a href="#about" class="link-to-about">ABOUT</a>
+    <a href="#experience" class="link-to-experience">WORK</a>
+    <a href="#main" class="link-to-main">PROJECTS</a>
     <a href="#contact" class="link-to-footer">CONTACT</a>
   </div>
 
   <!--Start Header Section-->
   <div class="header-container">
-    <div class="header-top">
-      Hi, I'm Candice! I like to build web apps.
+    <div class="header-top" id='about'>
+      <img class="profile" src="./images/me-photo-2.jpg">
+      <p class="about-blurb">
+        Hi there, I'm Candice! I am a software engineer with over 3 years of experience working on web applications.
+      </p>
     </div>
-    <div class="header-middle">
-      <a href="#contact" class="available-button link-to-footer" >Need a web engineer?</a>
-    </div>
-    <div class="header-bottom">
-      <a href="#main" class="work-button link-to-main">Check out my work >></a>
-    </div>
+    <!-- <div class="header-bottom"> -->
+      <!-- <a href="#main" class="work-button link-to-main">v</a> -->
+    <!-- </div> -->
   </div>
 
-
+<!--Start 2nd Main Section-->
+  <div class='wrapper'>
+  <div class="navbar-cushion" id="experience"></div>
+  <div class="main-container dark">
+    <div class="heading"></div>
+    <div class="project light">
+      <video class='arcules-video' src='https://go.arcules.com/hubfs/Arcules%20Graphics/website-inlinevideos/arcules-product-loop30-720.mp4' autoplay loop muted='muted' playsinline controlslist='nodownload'></video>
+    </div>
+    <div class="project-description light">
+      <h3>Arcules</h3>
+      <p>A cloud video surveillance platform.</p>
+      <p class="tag-list">
+        <span class="project-tag">React</span>
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">Go</span>
+        <span class="project-tag">PostgreSQL</span>
+        <span class="project-tag">ArangoDB</span>
+      </p>
+      <a href="https://arcules.com/" class="project-link" target="_blank">More Info</a>
+    </div>
+    <div class="project light">
+      <img class="project-image" src="./images/SenderOne-Mac.png">
+    </div>
+    <div class="project-description light">
+      <h3>Sender One Climbing</h3>
+      <p>A fully functional, responsive site showcasing two climbing facilities with custom features.</p>
+      <p class="tag-list">
+        <span class="project-tag">PHP</span>
+        <span class="project-tag">Wordpress</span>
+      </p>
+      <a href="https://www.senderoneclimbing.com/" class="project-link" target="_blank">View Site</a>
+    </div>
+  </div>
+  <div class="navbar-cushion" id="experience"></div>
+  </div>
 
   <!--Start Main Section-->
   <div class="navbar-cushion" id="main"></div>
@@ -54,7 +88,7 @@
         <span class="project-tag">Webpack</span>
         <span class="project-tag">Responsive Design</span>
       </p>
-      <a href="http://www.basketbear.com/" class="project-link" target="_blank">View Live</a>
+      <!-- <a href="http://www.basketbear.com/" class="project-link" target="_blank">View Live</a> -->
       <a href="https://github.com/Optimistic-Worms/basket-bear" class="project-link" target="_blank">Project Repo</a>
 
     </div>
@@ -71,7 +105,7 @@
         <span class="project-tag">Express.js</span>
         <span class="project-tag">MongoDB</span>
       </p>
-      <a href="http://jukebox-pizza.herokuapp.com/" class="project-link" target="_blank">View Live</a>
+      <!-- <a href="http://jukebox-pizza.herokuapp.com/" class="project-link" target="_blank">View Live</a> -->
       <a href="https://github.com/Anonymous-Pizza/jukebox" class="project-link" target="_blank">Project Repo</a>
     </div>
     <div class="project">
@@ -86,7 +120,7 @@
         <span class="project-tag">Express.js</span>
         <span class="project-tag">MongoDB</span>
       </p>
-      <a href="http://fit-stop.herokuapp.com/" class="project-link" target="_blank">View Live</a>
+      <!-- <a href="http://fit-stop.herokuapp.com/" class="project-link" target="_blank">View Live</a> -->
       <a href="https://github.com/Anonymous-Pizza/fit-stop" class="project-link" target="_blank">Project Repo</a>
     </div>
 
@@ -101,7 +135,7 @@
         <span class="project-tag">Node.js</span>
         <span class="project-tag">Express.js</span>
       </p>
-      <a href="https://prior-weather.appspot.com/" class="project-link" target="_blank">View Live</a>
+      <!-- <a href="https://prior-weather.appspot.com/" class="project-link" target="_blank">View Live</a> -->
       <a href="https://github.com/ctnswb/Prior-Weather" class="project-link" target="_blank">Project Repo</a>
     </div>
 
@@ -118,22 +152,10 @@
       </p>
       <a href="https://github.com/ctnswb/hit-the-hold" class="project-link" target="_blank">Project Repo</a>
     </div>
-
-    <div class="project">
-      <img class="project-image" src="./images/SenderOne-Mac.png">
-    </div>
-    <div class="project-description">
-      <h3>Sender One Climbing</h3>
-      <p>A fully functional, responsive site showcasing two climbing facilities with custom features.</p>
-      <p class="tag-list">
-        <span class="project-tag">PHP</span>
-        <span class="project-tag">Wordpress</span>
-      </p>
-      <a href="https://www.senderoneclimbing.com/" class="project-link" target="_blank">View Live</a>
-    </div>
-
-
   </div>
+
+
+
 
   <!--Start Footer Section-->
   <div class="navbar-cushion" id="contact"></div>

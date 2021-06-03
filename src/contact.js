@@ -62,3 +62,15 @@ $(document).on('click', '.link-to-main', ()=> {
     scrollTop: $("#main").offset().top
   }, 1500);
 })
+
+$(document).on('click', '.link-to-experience', ()=> {
+  $('html, body').animate({
+    scrollTop: $("#experience").offset().top
+  }, 1500);
+})
+
+$(document).on('click', '.link-to-about', ()=> {
+  $('html, body').animate({
+    scrollTop: $("#about").offset().top
+  }, 1500);
+})
