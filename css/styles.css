@@ -38,13 +38,10 @@ a {
   bottom: 0;
 */  display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-template-rows: 10vh 1fr 1fr 1fr;
+  grid-template-rows: 10vh 1fr;
   grid-template-areas:
     "nav nav nav"
-    "a topbox c"
-    "a centerbox c"
-    "a bottombox c";
-  height: 50vh;
+    "a topbox c";
   background: #283747;
   color: #F4F6F6;
   align-items: center;
@@ -52,11 +49,10 @@ a {
 
 .header-top {
   grid-area: topbox;
-  padding: 2%;
+  padding: 24px;
   font-size: 1em;
   text-align: center;
-  align-self: end;
-  padding-top: 10vh;
+  align-items: center;
   display: flex;
 }
 .header-middle {
@@ -267,6 +263,12 @@ a {
   }
   .profile {
     max-width: 100px;
+  }
+  .top-margin {
+    margin: 24px 0;
+  }
+  .header-top {
+    flex-direction: column;
   }
 }
 
